@@ -17,7 +17,7 @@ layui.define(['table', 'form'], function(exports){
   table.render({
     elem: '#LAY-app-forum-list'
     ,method:'POST'
-    ,url: 'https://www.hattonstar.com/shoppingGet?shop_id=2' //模拟接口
+    ,url: 'https://www.hattonstar.com/shoppingGet?shop_id=4' //模拟接口
     ,cols: [[
       {type: 'checkbox', fixed: 'left'}
       ,{field: 'id', width: 80, title: 'ID', sort: true}
@@ -42,7 +42,7 @@ layui.define(['table', 'form'], function(exports){
     table.render({
     elem: '#LAY-app-forum-delllist'
     ,method:'POST'
-    ,url: 'https://www.hattonstar.com/downGet?shop_id=2' //模拟接口
+    ,url: 'https://www.hattonstar.com/downGet?shop_id=4' //模拟接口
     ,cols: [[
       {type: 'checkbox', fixed: 'left'}
       ,{field: 'id', width: 80, title: 'ID', sort: true}
@@ -172,7 +172,7 @@ layui.define(['table', 'form'], function(exports){
           submit.trigger('click');
         }
         ,success: function(layero, index){
-          var mapType = new Map([['研学旅行', 15], ['社会实践', 16], ['周末主题', 18], ['夏/冬令营',19], ['亲子教育', 20], ['公益', 21], ['家庭教育', 22], ['公告中心', 18]]);
+          var mapType = new Map([['研学旅行', 15], ['社会实践', 16], ['周末主题', 17], ['夏/冬令营',19], ['亲子教育', 20], ['公益', 21], ['家庭教育', 22], ['公告中心', 18]]);
           var body = layer.getChildFrame('body', index);
           body.find("#shoping_name").val(obj.data.name);
           body.find("#shoping_price").val(obj.data.price);
