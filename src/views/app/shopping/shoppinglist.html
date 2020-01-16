@@ -26,19 +26,19 @@
         </script> 
         <script type="text/html" id="buttonTpl">
           {{#  if(d.flag == 3){ }}
-            <button class="layui-btn layui-btn-xs">月</button>
-          {{#  } else if(d.flag == 2){ }}
             <button class="layui-btn layui-btn-xs">导</button>
+          {{#  } else if(d.flag == 2){ }}
+            <button class="layui-btn layui-btn-xs">月</button>
           {{#  } else if(d.flag == 1) { }}
             <button class="layui-btn layui-btn-xs">广告</button>
           {{#  } else if(d.flag == 4) { }}
-            <button class="layui-btn layui-btn-normal layui-btn-xs">广告 导</button>
-          {{#  } else if(d.flag == 5) { }}
             <button class="layui-btn layui-btn-normal layui-btn-xs">广告 月</button>
+          {{#  } else if(d.flag == 5) { }}
+            <button class="layui-btn layui-btn-normal layui-btn-xs">广告 导</button>
           {{#  } else if(d.flag == 6) { }}
-            <button class="layui-btn layui-btn-normal layui-btn-xs">导 月</button>
+            <button class="layui-btn layui-btn-normal layui-btn-xs">月 导</button>
           {{#  } else if(d.flag == 7) { }}
-            <button class="layui-btn layui-btn-warm layui-btn-xs">广告 月 导</button>
+            <button class="layui-btn layui-btn-warm layui-btn-xs">广告 导 月</button>
           {{#  } else { }}
             <button class="layui-btn layui-btn-primary layui-btn-xs">无</button>
           {{#  } }}
