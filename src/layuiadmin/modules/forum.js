@@ -157,7 +157,7 @@ layui.define(['table', 'form'], function(exports){
                 post_switch : post_switch,
                 share_switch: share_switch,
                 type : field.shopping_type,
-                stock : field.shopping_stock
+                stock : field.stock
               },
               success:function(data){
                 console.log("success");
